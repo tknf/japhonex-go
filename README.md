@@ -19,11 +19,11 @@ import (
 func main() {
   result, err := japhonex.OptionalHyphen("<Phone number input>")
 
-  if (err != nil) {
+  if err != nil {
     fmt.Println(err)
   }
 
-  if (result) {
+  if result == true {
     // validation is passed
   }
 }
